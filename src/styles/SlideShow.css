@@ -1,0 +1,72 @@
+
+  .slide-div{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 81vh;
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 82px;
+    overflow: hidden;
+    
+  }
+  .slide-div-container{
+    display: block;
+    align-items: center;
+    justify-content: center;
+     padding: 0px 0;
+    height: 90%;
+    overflow: hidden;
+    width: 90%;
+    border-radius: 15px;
+    background-color:white;   
+  }
+
+  .each-slide-effect > div {
+    border-radius: 15px;
+    display: flex;
+    position: relative;
+    background-size: cover;
+    height: 70vh;
+    background-color:white;
+    justify-content: center;
+    
+  }
+  
+ 
+
+  .slide-effect-div {
+    position: absolute;
+    padding: 30px;
+    font-size: 20px;
+    background: transparent;
+    bottom: 10px;
+   
+    font-weight: bold;
+    font-size: 3rem;
+   
+    color:white;
+    font-family: 'DM SERİF DISPLAY', sans-serif;
+  
+    display: inline-block;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    letter-spacing: 5px;
+    color:#fff;
+  
+  }
+ 
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0; /* Harfler başlangıçta görünmez */
+    }
+    to {
+      opacity: 1; /* Harfler sonunda tamamen görünür */
+    }
+  }

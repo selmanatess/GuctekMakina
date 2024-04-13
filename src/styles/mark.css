@@ -1,0 +1,44 @@
+.mark-icon{
+    display: inline-block;
+    text-align: center;
+    margin: 0 5%;
+    color:rgb(252, 176, 64) ;
+}
+.mark-icon span{
+    font-size: 2rem;
+    color: #ebe3e3;
+    font-family: Arial, sans-serif;
+    color: rgb(6, 34, 165);
+    font-weight: 700;
+}
+.mark-icon:hover ,.mark-icon span:hover{
+    color:rgb(252, 176, 64) ;
+    transform: scale(1.2);
+}
+.mark-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 5% 20px 5%;
+   
+}
+.mark{
+    background-color: #fff;
+    margin: 10px 0  30px 0;
+}
+.mark-card{
+    width: 180px;
+  height: 100px;
+  border-radius: 30px;
+  background: #e0e0e0;
+  box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff;
+
+   background-repeat: no-repeat;
+   background-size: 100% 100%; 
+    background-position: center;
+   margin: 10px 20px;
+  display: wrap;
+  justify-content: center;
+
+}

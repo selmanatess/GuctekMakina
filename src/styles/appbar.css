@@ -1,0 +1,112 @@
+
+
+
+
+.guctek_yazi{
+  font-size: 1.8rem;
+  font-weight: 700;
+  color:rgb(252, 176, 64);
+  text-decoration: none;
+  font-family: 'DM SERİF DISPLAY', sans-serif;
+}
+
+.makina_yazi{
+  font-size: 1.8rem;
+  font-weight: 700;
+  color:#fff;
+  padding-left: 10px;
+  text-decoration: none;
+  font-family: 'DM SERİF DISPLAY', sans-serif;
+
+  padding-right: 10px;
+}
+
+.box-container {
+    flex-grow: 1;
+    display: none; /* xs ekran boyutunda gizle */
+  }
+  
+  @media (min-width: 768px) { /* md ekran boyutu için */
+    .box-container {
+      display: flex;
+
+      width: 100%;
+
+      justify-content: right;}
+  }
+  
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .button {
+    display: inline-block;
+ 
+    height: 50px;
+    margin: 0 2px;
+   
+    border:none;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+    background-color: rgb(6, 34, 165);
+   }
+   
+   .button::before,
+   .button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(15deg);
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: -1;
+   }
+   
+   .button::before {
+    left: -5px;
+    background: #fff;
+   }
+   
+   .button::after {
+    right: -5px;
+    background: #fff;
+   }
+   
+   .button:hover::before,
+   .button:hover::after {
+    width: 58%;
+
+   }
+   
+   .button:hover ,.button-span{
+    color: rgb(6, 34, 165);
+    transition: 0.3s;
+   }
+   
+   .button ,.button-span {
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.3s ease-in;
+    padding: 0 12px;
+   }
+  
+  .button:first-child {
+    margin-left: auto;
+  }
+
+  .app-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    z-index: 1000; /* Diğer elemanlardan üstte olması için z-index değeri */
+  }
+  
+  

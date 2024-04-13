@@ -1,0 +1,27 @@
+.products{
+    
+}
+.products-icon{
+    display: inline-block;
+    text-align: center;
+    margin: 0 5%;
+    color:rgb(252, 176, 64) ;
+}
+.products-icon span{
+    font-size: 2rem;
+    color: #ebe3e3;
+    font-family: Arial, sans-serif;
+    color: rgb(6, 34, 165);
+    font-weight: 700;
+}
+.products-icon:hover ,.products-icon span:hover{
+    color:rgb(252, 176, 64) ;
+    transform: scale(1.2);
+}
+.products-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 30px 20px 30px;
+   
+}
