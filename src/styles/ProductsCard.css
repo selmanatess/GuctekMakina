@@ -1,6 +1,6 @@
 .card {
     height: 300px;
-    width: 350px;
+
     position: relative;
     transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     border-radius: 16px;

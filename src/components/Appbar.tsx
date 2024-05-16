@@ -25,37 +25,44 @@ function ResponsiveAppBar() {
 
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
-  }; 
+  };
   const handleClick = () => {
     console.log('The link was clicked.');
   };
   return (
-   <div className='app-bar'>
-     <AppBar position="static" sx={{ backgroundColor: 'rgb(6, 34, 165)' }}>
-      <Container maxWidth="xl">
-        <Toolbar disableGutters >
-          <img src={logo1} alt="logo" style={{ width: 60, padding: 10 }} />
-          <div className='appbar_logo'>
-            <div className='logo_yazi'>
-              <span className='guctek_yazi'>GÜÇTEK</span>
-              <span className='makina_yazi'>MAKİNA</span>
-            </div></div>
+    <div className='app-bar'>
+      <AppBar position="static" sx={{ backgroundColor: 'rgb(6, 34, 165)' }}>
+        <Container maxWidth="xl">
+          <Toolbar disableGutters >
+            <img src={logo1} alt="logo" style={{ width: 60, padding: 10 }} />
+            <div className='appbar_logo'>
+              <div className='logo_yazi'>
+                <span className='guctek_yazi'>GÜÇTEK</span>
+                <span className='makina_yazi'>MAKİNA</span>
+              </div></div>
 
-          <div className="box-container">
-           {pages.map((page, index) => (
+            <div className="box-container">
+              {pages.map((page, index) => (
 
 
 
-              <Button key={index} onClick={handleClick} text={page}></Button>
-            ))}
-          
-</div>
-         </Toolbar>
-      </Container>
+                <Button key={index} onClick={handleClick} text={page}></Button>
+              ))}
+            </div>
+            <div className='min-container'  onClick={handleClick}>
+              <label className="burger" htmlFor="burger">
+                <input type="checkbox" id="burger" />
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+          </Toolbar>
+        </Container>
 
-    </AppBar>
+      </AppBar>
 
-   </div>
+    </div>
   );
 }
 export default ResponsiveAppBar;
